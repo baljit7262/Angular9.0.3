@@ -1,0 +1,37 @@
+<div class="outerline">
+    <h1 mat-dialog-title>
+      <div class="sub-header">
+        <span>Merge Organizations</span>
+      </div>
+    </h1>
+    <div mat-dialog-content>
+        <div class="row pl-3 pr-3">
+            <div class="search-field" style="width: 100%;">
+              <span class="mb-2">Select the organization you would like to merge AssurityLabs into.</span>
+                <mat-form-field appearance="outline">
+                    <input  matInput 
+                    type="text"                  
+                    placeholder="Search for organization"
+                   type="text">
+                  </mat-form-field>
+                  <p class="info" style="color: gray;">Note that two synced Organizations cannot be merged</p>
+                </div>
+        
+        </div>
+      
+     
+    </div>
+    <div mat-dialog-actions class="pb-3 pl-1">
+      <button
+        class="add-bt savebg"
+        mat-button
+        cdkFocusInitial
+      >
+        OK
+      </button>
+      <button mat-button class="add-bt cancelbg" (click)="onNoClick()">
+        Cancel
+      </button>
+    </div>
+  </div>
+  

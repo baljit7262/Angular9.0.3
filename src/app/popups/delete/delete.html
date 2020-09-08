@@ -1,0 +1,32 @@
+<div class="outerline">
+    <h1 mat-dialog-title>
+      <div class="sub-header">
+        <span>Alert</span>
+      </div>
+    </h1>
+    <div mat-dialog-content>
+        <div class="row">
+            <div class="col-md-12">
+                 <span > <p class="delete-msg">
+                  {{data.Message}}
+                 </p></span> 
+            </div>
+        
+        </div>
+      
+     
+    </div>
+    <div mat-dialog-actions>
+      <button
+        class="add-bt savebg"
+        mat-button
+        cdkFocusInitial
+      >
+        OK
+      </button>
+      <button mat-button class="add-bt cancelbg" (click)="onNoClick()">
+        Cancel
+      </button>
+    </div>
+  </div>
+  

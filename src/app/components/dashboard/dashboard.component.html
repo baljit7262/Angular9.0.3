@@ -1,0 +1,85 @@
+<div class="component-header">
+    <label>Dashboard</label>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-9 mt-2 mb-3">
+            <div class="fav">
+                <i class="far fa-star"></i> <span> Favorites</span>
+                <p>
+                    Organizations you 'star' as favorites will be shown here.
+                </p>
+            </div>
+            <div class="bline">
+                <hr>
+            </div>
+            <div class="fav">
+                <i class="fas fa-signal mr-2"></i>  <span>System Usage(Last 60 days)</span>
+            </div>
+            <div class="flex">
+                <div class="flex-item">
+                  <div style="display: block;">
+                  <canvas baseChart style="width: 100%;height: 600px;"
+                              [datasets]="lineChartData"
+                              [labels]="lineChartLabels"
+                              [options]="lineChartOptions"
+                              [colors]="lineChartColors"
+                              [legend]="lineChartLegend"
+                              [chartType]="lineChartType"
+                              [plugins]="lineChartPlugins"
+                              (chartHover)="chartHovered($event)"
+                              (chartClick)="chartClicked($event)"></canvas>
+                  </div>
+                </div>
+                </div>
+                <div class="fav mt-3 ml-2 mb-2">
+                    <i class="fas fa-bullhorn mr-2"></i>
+                     <span>Activity Feed</span>
+                </div>
+                <div class="activity mt-2">
+                    <div class="user-circle">JS
+                    </div>
+                    <div class="detail">
+                    Jaswant Singh updated the Password 
+                   <span class="name">SonicWall-Core Lab</span> for
+                   <span class="name">AssurityLabs.</span>
+                    </div>
+                </div>
+
+                <div class="name mt-3">
+                    View all activity logs
+                </div>
+        </div>
+   <div class="col-3 rightbar">
+    <div class="side-content">
+    <div class="title">
+        <i class="fas fa-chart-line mr-2"></i> <span>Popular This Weak</span>
+        <p>Organizations with the most activity will be highlighted here.</p>
+    </div>
+    <div class="bline">
+        <hr>
+    </div>
+    <div class="title">
+        <i class="far fa-clock mr-2"></i> <span>Recently Viewed By You</span>
+        <ul>
+            <li><i class="fas fa-home mr-2 mt-3"></i>iSource Cloud Services</li>
+            <li><i class="fas fa-folder mr-2"></i>Backup & Disaster Recovery (BDR)</li>
+            <li><i class="fas fa-user mr-2"></i>S Farmer</li>
+            <li><i class="fab fa-houzz mr-2"></i>AssurityLabs</li>
+            <li><i class="fas fa-key mr-2"></i>Belkin Wifi</li>
+        </ul>
+    </div>
+    <div class="bline">
+        <hr>
+    </div>
+    <div class="title">
+        <i class="fas fa-chart-line mr-2"></i> <span>Recently Updated</span>
+        <p>You haven't updated anything recently.</p>
+    </div>
+    </div>
+   </div>
+</div>
+
+
+
+
